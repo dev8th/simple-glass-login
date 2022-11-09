@@ -1,0 +1,104 @@
+body{
+    margin:0;
+    padding:0;
+    background-image: url("assets/wallpaper.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 50px);
+}
+
+.main{
+    position: relative;
+    padding:20px;
+    background-color: rgb(255, 255, 255,0.25);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    box-shadow: 0 5px 5px 0 rgb(255, 255, 255,0.25);
+    border-radius:10px;
+    font-size: 20px;;
+    color:white;
+}
+
+.main .header{
+    display: flex;
+    justify-content: center;
+    margin-top:-60px;
+}
+
+.main .header img{
+    width:80px;
+    height: 80px;
+    border-radius:50%;
+}
+
+.main .welcome{
+    text-align: center;
+    margin-top:50px;
+    font-size:34px;
+}
+
+.main form{
+    margin-top:20px;
+}
+
+.form-user,.form-password{
+    position: relative;
+    display:flex;
+    align-items: center;
+}
+
+.main form input{
+    margin-top:30px;
+    padding-left:30px;
+    background-color: inherit;
+    border:none;
+    border-bottom:1px solid white;
+    height:25px;
+    font-size: 20px;
+    color:white;
+}
+
+.main form input::placeholder{
+    color:rgb(188, 186, 186);
+}
+
+.main form input:focus{
+    outline:none;
+    border-bottom:2px solid rgb(0, 200, 255)
+}
+
+.login-icon{
+    margin-top:25px;
+    position: absolute;
+}
+
+.hideshow{
+    margin-top:25px;
+    position:absolute;
+    right:0;
+    cursor: pointer;
+}
+
+.button{
+    text-align: center;
+}
+
+.main form button{
+    margin-top:30px;
+    height:50px;
+    width:50px;
+    border:none;
+    border-radius:50%;
+    cursor:pointer;
+}
+
+.main form button:hover{
+    background-color: rgb(0, 200, 255);
+    color:white;
+}
